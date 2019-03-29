@@ -1,0 +1,10 @@
+create database lily_home_page;
+create table comments(
+id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+text LONGTEXT NOT NULL,
+commenter VARCHAR(255) NOT NULL,
+date_posted DATE,
+location_info VARCHAR(1000) NOT NULL
+);
+insert into comments(text, commenter, date_posted, location_info) values ("Test test test test", "Tester", NOW(), "Somewhere warm");
+
