@@ -53,7 +53,7 @@ Ext.onReady(function(){
 		window.open('http://lilyandrich.loveslife.biz','Lily and Rich','width=400,height=200');
 	};
 	var gotoVirtualRolodex = function() {
-		window.open('http://ourdirectory.web1337.net/List.php','Directory','width=400,height=200');
+		window.open('http://ourdirectory.web1337.net/index.php','Directory','width=400,height=200');
 	};
 	var openResume = function() {
                 /*var wrd=new ActiveXObject("Word.Application");
