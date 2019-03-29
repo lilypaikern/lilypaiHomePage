@@ -49,13 +49,19 @@ Ext.onReady(function(){
 							 }
 							 });*/
 	};
+	var gotoWeddingWebsite = function() {
+		window.open('http://lilyandrich.loveslife.biz','Lily and Rich','width=400,height=200');
+	};
+	var gotoVirtualRolodex = function() {
+		window.open('http://ourdirectory.web1337.net/List.php','Directory','width=400,height=200');
+	};
 	var openResume = function() {
-    /*var wrd=new ActiveXObject("Word.Application");
-   wrd.visible=true;
-   wrd.Application.Activate();
-   wrd.Documents.Open("AddressLabel.docx");
-   wrd=null;*/
-  window.open('http://lilypai.byethost31.com/Resume October 2015.pdf', "_blank");
+                /*var wrd=new ActiveXObject("Word.Application");
+               wrd.visible=true;
+               wrd.Application.Activate();
+               wrd.Documents.Open("AddressLabel.docx");
+               wrd=null;*/
+               window.open('http://lilypai.byethost31.com/Resume October 2015.pdf', "_blank");
 	};
 	var openPurchaseManager = function() {
 		window.open('http://mypurchasemanager.zxq.net','My Purchase Manager','width=400,height=200');
@@ -80,8 +86,11 @@ Ext.onReady(function(){
 			
   var wMenu = new Ext.menu.Menu({
     items: [{
-      text: 'Add New Website',
-      handler: addNewWebsiteWindow
+      text: 'Wedding Website',
+      handler: gotoWeddingWebsite
+    }, {
+      text: 'Virtual Rolodex',
+      handler: gotoVirtualRolodex
     }]
   });  
   var toolbar = new Ext.Toolbar({
@@ -100,10 +109,6 @@ Ext.onReady(function(){
 		handler: openResume,
 		width: 200
     }, {
-		text: 'Purchase Manager',
-		handler: openPurchaseManager,
-		width: 200
-	}, {
 		text: 'Guest Book',
 		handler: openGuestBook,
 		width: 200
